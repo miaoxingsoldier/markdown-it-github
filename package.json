@@ -1,0 +1,57 @@
+{
+  "name": "markdown-it-github",
+  "version": "0.1.0",
+  "description": "A markdown-it plugin to generate github style markdown.",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "npm run build:ver",
+    "git-cz": "git-cz",
+    "bootstrap": "npm i && git config --local \"alias.cz\" \"!npm run git-cz\"",
+    "build:log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md && git commit -m \"docs(changelog): update CHANGELOG.md\"",
+    "build:ver": "conventional-recommended-bump -p angular | xargs npm --no-git-tag-version version && npm run build:log && git checkout -- package.json && conventional-recommended-bump -p angular | xargs npm version -m 'chore(release): %s'",
+    "lint": "eslint --fix index.js lib test",
+    "test": "jest"
+  },
+  "keywords": [
+    "markdown",
+    "markdown-it",
+    "markdown-it-plugin",
+    "customization",
+    "theme",
+    "class",
+    "style",
+    "github"
+  ],
+  "author": "miaoxingsoldier",
+  "license": "Unlicense",
+  "files": [
+    "README.md",
+    "lib/*",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miaoxingsoldier/markdown-it-github.git"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "commitizen": "^4.0.3",
+    "conventional-changelog-cli": "^2.0.25",
+    "conventional-recommended-bump": "^6.0.2",
+    "cz-conventional-changelog": "^3.0.2",
+    "eslint": "^6.5.1",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^3.0.9",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.4.2",
+    "markdown-it": "^10.0.0"
+  },
+  "dependencies": {
+    "markdown-it-theme": "^0.2.0"
+  }
+}

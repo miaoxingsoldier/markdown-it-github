@@ -1,0 +1,10 @@
+{
+  "*.js": [
+    "npm run lint",
+    "git add"
+  ],
+  "*.vue": [
+    "npm run lint",
+    "git add"
+  ]
+}
