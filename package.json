@@ -4,7 +4,8 @@
   "description": "A markdown-it plugin to generate github style markdown.",
   "main": "index.js",
   "scripts": {
-    "prepublish": "npm run build:ver",
+    "prepare": "npm run build:ver",
+    "release": "npm publish --registry http://registry.npmjs.org",
     "git-cz": "git-cz",
     "bootstrap": "npm i && git config --local \"alias.cz\" \"!npm run git-cz\"",
     "build:log": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md && git commit -m \"docs(changelog): update CHANGELOG.md\"",
