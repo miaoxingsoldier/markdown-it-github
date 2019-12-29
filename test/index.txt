@@ -1,0 +1,242 @@
+@title h1
+@input
+# This is an H1
+@output
+<h1 class="@theme @theme__h1">This is an H1</h1>
+
+@title h2
+@input
+## This is an H2
+@output
+<h2 class="@theme @theme__h2">This is an H2</h2>
+
+@title h3
+@input
+### This is an H3
+@output
+<h3 class="@theme @theme__h3">This is an H3</h3>
+
+@title h4
+@input
+#### This is an H4
+@output
+<h4 class="@theme @theme__h4">This is an H4</h4>
+
+@title h5
+@input
+##### This is an H5
+@output
+<h5 class="@theme @theme__h5">This is an H5</h5>
+
+@title h6
+@input
+###### This is an H6
+@output
+<h6 class="@theme @theme__h6">This is an H6</h6>
+
+@title paragraph
+@input
+This is paragraph
+@output
+<p class="@theme @theme__p">This is paragraph</p>
+
+@title blockquote
+@input
+> This is a blockquote
+@output
+<blockquote class="@theme @theme__blockquote">
+<p class="@theme @theme__p">This is a blockquote</p>
+</blockquote>
+
+@title ul width *
+@input
+* Red
+* Green
+* Blue
+@output
+<ul class="@theme @theme__ul">
+<li class="@theme @theme__li">Red</li>
+<li class="@theme @theme__li">Green</li>
+<li class="@theme @theme__li">Blue</li>
+</ul>
+
+@title ul with +
+@input
++ Red
++ Green
++ Blue
+@output
+<ul class="@theme @theme__ul">
+<li class="@theme @theme__li">Red</li>
+<li class="@theme @theme__li">Green</li>
+<li class="@theme @theme__li">Blue</li>
+</ul>
+
+@title ul with -
+@input
+- Red
+- Green
+- Blue
+@output
+<ul class="@theme @theme__ul">
+<li class="@theme @theme__li">Red</li>
+<li class="@theme @theme__li">Green</li>
+<li class="@theme @theme__li">Blue</li>
+</ul>
+
+@title ol
+@input
+1. Bird
+2. McHale
+3. Parish
+@output
+<ol class="@theme @theme__ol">
+<li class="@theme @theme__li">Bird</li>
+<li class="@theme @theme__li">McHale</li>
+<li class="@theme @theme__li">Parish</li>
+</ol>
+
+@title indent code block
+@input
+This is a code block
+
+    tell application "Foo"
+        beep
+    end tell
+@output
+<p class="@theme @theme__p">This is a code block</p>
+<pre class="@theme @theme__pre"><code class="@theme @theme__code">tell application &quot;Foo&quot;
+    beep
+end tell</code></pre>
+
+@title fenced code block
+@input
+```javascript
+function test() {
+	console.log("Hello world!");
+}
+```
+@output
+<pre class="@theme @theme__pre"><code class="@theme @theme__code language-javascript">function test() {
+	console.log(&quot;Hello world!&quot;);
+}
+</code></pre>
+
+@title horizontal rule with * * *
+@input
+* * *
+@output
+<hr class="@theme @theme__hr">
+
+@title horizontal rule with ***
+@input
+***
+@output
+<hr class="@theme @theme__hr">
+
+@title horizontal rule with *****
+@input
+*****
+@output
+<hr class="@theme @theme__hr">
+
+@title horizontal rule with - - -
+@input
+- - -
+@output
+<hr class="@theme @theme__hr">
+
+@title horizontal rule with ---------------------------------------
+@input
+---------------------------------------
+@output
+<hr class="@theme @theme__hr">
+
+@title emphasis with *
+@input
+*single asterisks*
+@output
+<p class="@theme @theme__p"><em class="@theme @theme__em">single asterisks</em></p>
+
+@title emphasis with _
+@input
+_single underscores_
+@output
+<p class="@theme @theme__p"><em class="@theme @theme__em">single underscores</em></p>
+
+@title emphasis with **
+@input
+**double asterisks**
+@output
+<p class="@theme @theme__p"><strong class="@theme @theme__strong">double asterisks</strong></p>
+
+@title emphasis with __
+@input
+__double underscores__
+@output
+<p class="@theme @theme__p"><strong class="@theme @theme__strong">double underscores</strong></p>
+
+@title code
+@input
+Use the `printf()` function.
+@output
+<p class="@theme @theme__p">Use the <code class="@theme @theme__code">printf()</code> function.</p>
+
+@title strikethrough
+@input
+~~strikethrough~~
+@output
+<p class="@theme @theme__p"><s class="@theme @theme__s">strikethrough</s></p>
+
+@title image
+@input
+![Alt text](/path/to/img.jpg)
+@output
+<p class="@theme @theme__p"><img src="/path/to/img.jpg" alt="Alt text" class="@theme @theme__img"></p>
+
+@title link
+@input
+This is [an example](http://example.com/ "Title") inline link.
+@output
+<p class="@theme @theme__p">This is <a href="http://example.com/" title="Title" class="@theme @theme__a">an example</a> inline link.</p>
+
+@title automatic link
+@input
+<http://example.com/>
+@output
+<p class="@theme @theme__p"><a href="http://example.com/" class="@theme @theme__a">http://example.com/</a></p>
+
+@title table
+@input
+| product        | price   |  count  |
+| --------   | -----:  | :----:  |
+| computer      | $1600   |   5     |
+| phone        |   $12   |   12   |
+| card        |    $1    |  234  |
+@output
+<table class="@theme @theme__table">
+<thead class="@theme @theme__thead">
+<tr class="@theme @theme__tr">
+<th class="@theme @theme__th">product</th>
+<th style="text-align:right" class="@theme @theme__th">price</th>
+<th style="text-align:center" class="@theme @theme__th">count</th>
+</tr>
+</thead>
+<tbody class="@theme @theme__tbody">
+<tr class="@theme @theme__tr">
+<td class="@theme @theme__td">computer</td>
+<td style="text-align:right" class="@theme @theme__td">$1600</td>
+<td style="text-align:center" class="@theme @theme__td">5</td>
+</tr>
+<tr class="@theme @theme__tr">
+<td class="@theme @theme__td">phone</td>
+<td style="text-align:right" class="@theme @theme__td">$12</td>
+<td style="text-align:center" class="@theme @theme__td">12</td>
+</tr>
+<tr class="@theme @theme__tr">
+<td class="@theme @theme__td">card</td>
+<td style="text-align:right" class="@theme @theme__td">$1</td>
+<td style="text-align:center" class="@theme @theme__td">234</td>
+</tr>
+</tbody>
+</table>
