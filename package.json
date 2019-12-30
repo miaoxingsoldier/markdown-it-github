@@ -53,6 +53,7 @@
     "markdown-it": "^10.0.0"
   },
   "dependencies": {
+    "github-slugger": "^1.2.1",
     "markdown-it-theme": "^0.2.0"
   }
 }
