@@ -1,5 +1,15 @@
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/miaoxingsoldier/markdown-it-github/compare/v0.1.0...v0.2.0) (2019-12-30)
+
+
+### Features
+
+* add heading anchor ([059dd20](https://github.com/miaoxingsoldier/markdown-it-github/commit/059dd20))
+
+
+
 <a name="0.1.0"></a>
-# 0.1.0 (2019-12-29)
+# [0.1.0](https://github.com/miaoxingsoldier/markdown-it-github/compare/5913dc3...v0.1.0) (2019-12-29)
 
 
 ### Features
