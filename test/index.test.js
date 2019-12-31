@@ -13,9 +13,6 @@ describe('markdown-it-github', () => {
   testcases.forEach(testcase => {
     it(testcase.title, () => {
       var result = md.render(testcase.input)
-      if (result.trim() !== testcase.output) {
-        console.log(result.trim())
-      }
       expect(result.trim()).toBe(testcase.output)
     })
   })
