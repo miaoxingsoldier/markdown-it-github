@@ -1,3 +1,13 @@
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/miaoxingsoldier/markdown-it-github/compare/v0.3.0...v0.4.0) (2020-01-01)
+
+
+### Features
+
+* add image link ([c622c33](https://github.com/miaoxingsoldier/markdown-it-github/commit/c622c33))
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/miaoxingsoldier/markdown-it-github/compare/v0.2.0...v0.3.0) (2019-12-31)
 
