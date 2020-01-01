@@ -192,7 +192,7 @@ Use the `printf()` function.
 @input
 ![Alt text](/path/to/img.jpg)
 @output
-<p class="@theme @theme__p"><img src="/path/to/img.jpg" alt="Alt text" class="@theme @theme__img"></p>
+<p class="@theme @theme__p"><a class="@theme__a" target="_blank" href="/path/to/img.jpg"><img src="/path/to/img.jpg" alt="Alt text" class="@theme @theme__img" style="max-width:100%;"></a></p>
 
 @title link
 @input
