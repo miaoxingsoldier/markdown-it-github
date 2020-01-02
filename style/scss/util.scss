@@ -1,0 +1,18 @@
+$theme: "md-github";
+$separator: '__';
+
+@mixin ns($tags) {
+  $selector: "";
+  @each $tag in $tags {
+    $selector: #{$selector + "." + $theme + $separator + $tag + ","};
+  }
+  #{$selector} {
+    @content;
+  }
+}
+
+@mixin all() {
+  *.#{$theme} {
+    @content;
+  }
+}
