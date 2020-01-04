@@ -36,3 +36,29 @@ console.log(result)
 <li class="md-github md-github__li">Blue</li>
 </ul>
 ```
+
+### style
+
+You can import [github.css](https://github.com/miaoxingsoldier/markdown-it-github/tree/master/lib/github.css) to replicates the github markdown style:
+
+- add `github.css` stylesheet
+- add `md-github__body` class to the container
+- set a width for the container
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="github.css">
+  <style>
+    .md-github__body {
+      min-width: 200px;
+      max-width: 980px;
+    }
+  </style> 
+</head>
+<body>
+  <div class="md-github__body"><!-- markdown-it-github-output --></div>
+</body>
+</html>
+```
