@@ -1,3 +1,13 @@
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/miaoxingsoldier/markdown-it-github/compare/v0.4.0...v0.5.0) (2020-01-05)
+
+
+### Features
+
+* **style:** add github stylesheet ([bf8826b](https://github.com/miaoxingsoldier/markdown-it-github/commit/bf8826b))
+
+
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/miaoxingsoldier/markdown-it-github/compare/v0.3.0...v0.4.0) (2020-01-01)
 
